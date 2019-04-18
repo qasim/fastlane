@@ -303,7 +303,7 @@ module Deliver
     end
 
     def self.resolve_ipadpro_conflict_if_needed(device_type, filename)
-      is_3rd_gen = filename.include?("(3rd generation)")
+      is_3rd_gen = filename.include?("ipadPro129")
       if is_3rd_gen
         if device_type == ScreenSize::IOS_IPAD_PRO
           return ScreenSize::IOS_IPAD_PRO_12_9
